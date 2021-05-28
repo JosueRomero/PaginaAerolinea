@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Journey HTML CSS Template</title>
+<!-- 
+Journey Template 
+http://www.templatemo.com/tm-511-journey
+-->
+    <!-- load stylesheets -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">  <!-- Google web font "Open Sans" -->
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">                <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">                                      <!-- Bootstrap style -->
+    <link rel="stylesheet" type="text/css" href="css/datepicker.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <link rel="stylesheet" href="css/templatemo-style.css">                                   <!-- Templatemo style -->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+            <!--[if lt IE 9]>
+              <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+              <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+          <![endif]-->
+      </head>
+
+      <body>
+        <div class="tm-main-content" id="top">
+            <div class="tm-top-bar-bg"></div>    
+            <div class="tm-top-bar" id="tm-top-bar">
+                <div class="container">
+                    <div class="row">
+                        <nav class="navbar navbar-expand-lg narbar-light">
+                            <a class="navbar-brand mr-auto" href="#">
+                                <img src="img/logo.png" alt="Site logo">
+                            </a>
+                            <button type="button" id="nav-toggle" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div id="mainNav" class="collapse navbar-collapse tm-bg-white">
+                                <ul class="navbar-nav ml-auto">
+                                  <li class="nav-item">
+                                    <a class="nav-link active" href="#top">Inicio <span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#tm-section-2">Mejores destinos</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#tm-section-3">Lugares recomendados</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#tm-section-4">Contáctanos</a>
+                                </li>
+                            </ul>
+                        </div>                            
+                    </nav>
+                </div> <!-- row -->
+            </div> <!-- container -->
+        </div> <!-- .tm-top-bar -->
+
+        <div class="tm-page-wrap mx-auto">
+            <section class="tm-banner">
+				
+				
+				
+                <div class="tm-container-outer tm-banner-bg1" id="banner">
+                    <div class="container">
+
+						
+						
+                        <div class="row tm-banner-row tm-banner-row-header">
+                            <div class="col-xs-12">
+                                <div class="tm-banner-header">
+                                    <h1 class="text-uppercase tm-banner-title">Empecemos</h1>
+                                    <img src="img/dots-3.png" alt="Dots">
+                                    <p class="tm-banner-subtitle">Te ayudamos a encontrar lo mejor.</p>
+                                    <a href="javascript:void(0)" class="tm-down-arrow-link"><i class="fa fa-2x fa-angle-down tm-down-arrow"></i></a>       
+                                </div>    
+                            </div>  <!-- col-xs-12 -->                      
+                        </div> <!-- row -->
+                        <div class="row tm-banner-row" id="tm-section-search">
+
+                            <form id="form1" action="horarios.php" method="get" class="tm-search-form tm-section-pad-2">
+                                <div class="form-row tm-search-form-row">                                
+                                    <div class="form-group tm-form-group tm-form-group-2" align="center"> 
+									<div class="form-group tm-form-group tm-form-group-pad tm-form-group-2">
+                                        <label for="inputCity">Elige tu origen</label>
+										<select id="select1" name="origen" class="form-control tm-select">
+											<option id="0">Toronto</option>
+											<option id="1">El Cairo</option>
+											<option id="2">Buenos aires</option>
+											<option id="3">Moscú</option>
+											<option id="4">Sidney</option>
+											<option id="5">White desert</option>
+										</select>
+                                    </div> <!-- div origen -->
+									<div class="form-group tm-form-group tm-form-group-pad tm-form-group-2">
+                                        <label for="inputCity">Elige tu destino</label>
+										<select id="select2" name="destino" class="form-control tm-select">
+											<option id="0">Toronto</option>
+											<option id="1">El Cairo</option>
+											<option id="2">Buenos aires</option>
+											<option id="3">Moscú</option>
+											<option id="4">Sidney</option>
+											<option id="5">White desert</option>
+										</select>
+                                    </div> <!-- div destino -->
+									</div> <!-- div origen/destino -->
+                                    <div class="form-group tm-form-group tm-form-group-1" align="center">              
+                                        <div class="form-group tm-form-group tm-form-group-pad tm-form-group-3" align="center">
+                                            <label for="inputAdult">Adultos</label>     
+                                            <select name="adult" class="form-control tm-select" id="inputAdult">
+                                                <option value="1" selected>1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                            </select>                                        
+                                        </div> <!-- div adulto -->
+                                        <div class="form-group tm-form-group tm-form-group-pad tm-form-group-3">
+                                            <label for="inputChildren">Niños</label>                                            
+                                            <select name="children" class="form-control tm-select" id="inputChildren">
+                                            	<option value="0" selected>0</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                            </select>                                        
+                                        </div> <!-- div niño -->
+										<div class="form-group tm-form-group tm-form-group-pad tm-form-group-3">
+                                        <label for="inputCheckIn">Fecha de vuelo</label>
+                                        <input name="check-in" type="text" class="form-control" id="inputCheckIn" placeholder="Fecha">
+                                    </div>
+                                    </div> <!-- div adulto/niño -->
+                                </div> <!-- form-row -->
+                                <div class="form-row tm-search-form-row tm-orientacion">
+									<div class="form-group tm-form-group tm-form-group-pad tm-form-group-3" style="visibility: hidden;height: 1px">
+                                        <label for="inputCheckIn">Fecha Check In</label>
+                                        <input name="check-in" type="text" class="form-control" id="inputCheckIn1" placeholder="Check In">
+                                    </div>
+                                    <div class="form-group tm-form-group tm-form-group-pad tm-form-group-3" style="visibility: hidden;height: 1px">
+                                        <label for="inputCheckOut">Fecha Check Out</label>
+                                        <input name="check-out" type="text" class="form-control" id="inputCheckOut" placeholder="Check Out">
+                                    </div>
+                                    <div class="form-group tm-form-group tm-form-group-pad tm-form-group-1">
+                                        <button type="submit" class="btn btn-primary tm-btn tm-btn-search text-uppercase" id="btnSubmit">Continuar</button>
+										<!--Comentario-->
+                                    </div>
+                                </div>                              
+                            </form>                             
+
+                        </div> <!-- row -->
+                        <div class="tm-banner-overlay"></div>
+                    </div>  <!-- .container -->                   
+                </div>     <!-- .tm-container-outer -->                 
+            </section>
+
+            <section class="p-5 tm-container-outer tm-bg-gray">            
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 mx-auto tm-about-text-wrap text-center">                        
+                            <h2 class="text-uppercase mb-4">Tu <strong>viaje</strong> es nuestra prioridad</h2>                           
+                        </div>
+                    </div>
+                </div>            
+            </section>
+            
+            <div class="tm-container-outer" id="tm-section-2">
+                <section class="tm-slideshow-section">
+                    <div class="tm-slideshow">
+                        <img src="img/Londres1.jpg" alt="Image">
+                        <img src="img/Londres2.jpg" alt="Image">
+                        <img src="img/Londres3.jpg" alt="Image">    
+                    </div>
+                    <div class="tm-slideshow-description tm-bg-primary">
+                        <h2 class="">Europa. Londres</h2>
+                        <p>La gran urbe europea es todo lo que queremos que sea. Cosmopolita, populosa, mestiza, con un atractivo turístico innegable. Es la capital de Inglaterra y también del Reino Unido y podemos destacar muchas cosas de ella como el archiconocido Parlamento, el Big Ben, Buckhingham. Son solo una pequeña parte de todo lo que destaca sobre el resto de Inglaterra.</p>
+                    </div>
+                </section>
+                <section class="clearfix tm-slideshow-section tm-slideshow-section-reverse">
+
+                    <div class="tm-right tm-slideshow tm-slideshow-highlight">
+                        <img src="img/Canada1.jpg" alt="Image">
+                        <img src="img/Canada2.jpg" alt="Image">
+                        <img src="img/Canada3.jpg" alt="Image">
+                    </div> 
+
+                    <div class="tm-slideshow-description tm-slideshow-description-left tm-bg-highlight">
+                        <h2 class="">America. Toronto</h2>
+                        <p>Toronto es una de las ciudades más conocidas de Canadá y cuenta con una de las mejores calidades de vida de América del Norte. La cosmopolita ciudad de Toronto ofrece una variedad de festivales y eventos a lo largo del año. Por ejemplo, la Nuit Blanche es una noche que celebra el arte contemporáneo y expone el trabajo de más de 4,600 artistas. </p>
+                    </div>                        
+
+                </section>
+                <section class="tm-slideshow-section">
+                    <div class="tm-slideshow">
+                        <img src="img/Antartida2.jpg" alt="Image">
+                        <img src="img/Antartida3.jpg" alt="Image">
+                        <img src="img/Antartida1.jpg" alt="Image">
+                    </div>
+                    <div class="tm-slideshow-description tm-bg-primary">
+                        <h2 class="">Antártida. White Desert</h2>
+                        <p>White Desert es el primer hotel de lujo que ofrece noches en pequeños iglús fabricados con fibra de vidrio. Está compuesto por seis de ellos equipados con habitaciones, baño, salón, comedor y biblioteca .La energía proviene de los recursos naturales de la Antártida. </p>
+                    </div>
+                </section>
+            </div>        
+            <div class="tm-container-outer" id="tm-section-3">
+                <ul class="nav nav-pills tm-tabs-links">
+                    <li class="tm-tab-link-li">
+                        <a href="#1a" data-toggle="tab" class="tm-tab-link">
+                            <img src="img/north-america.png" alt="Image" class="img-fluid">
+                            North America
+                        </a>
+                    </li>
+                    <li class="tm-tab-link-li">
+                        <a href="#2a" data-toggle="tab" class="tm-tab-link">
+                            <img src="img/south-america.png" alt="Image" class="img-fluid">
+                            South America
+                        </a>
+                    </li>
+                    <li class="tm-tab-link-li">
+                        <a href="#3a" data-toggle="tab" class="tm-tab-link">
+                            <img src="img/europe.png" alt="Image" class="img-fluid">
+                            Europe
+                        </a>
+                    </li>
+                    <li class="tm-tab-link-li">
+                        <a href="#4a" data-toggle="tab" class="tm-tab-link active"><!-- Current Active Tab -->
+                            <img src="img/asia.png" alt="Image" class="img-fluid">
+                            Asia
+                        </a>
+                    </li>
+                    <li class="tm-tab-link-li">
+                        <a href="#5a" data-toggle="tab" class="tm-tab-link">
+                            <img src="img/africa.png" alt="Image" class="img-fluid">
+                            Africa
+                        </a>
+                    </li>
+                    <li class="tm-tab-link-li">
+                        <a href="#6a" data-toggle="tab" class="tm-tab-link">
+                            <img src="img/australia.png" alt="Image" class="img-fluid">
+                            Australia
+                        </a>
+                    </li>
+                    <li class="tm-tab-link-li">
+                        <a href="#7a" data-toggle="tab" class="tm-tab-link">
+                            <img src="img/antartica.png" alt="Image" class="img-fluid">
+                            Antartica
+                        </a>
+                    </li>
+                </ul>
+                <div class="tab-content clearfix">
+   
+                    <!-- Tab 1 -->
+                    <div class="tab-pane fade" id="1a">
+                        <div class="tm-recommended-place-wrap">
+                            <div class="tm-recommended-place">
+                                <img src="img/toronto.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Toronto</h3>
+                                    <p class="tm-text-highlight">Canadá</p>
+                                    <p class="tm-text-gray">Toronto es una ciudad eminentemente multicultural, que cuenta con un altísimo porcentaje de población no nacida en Canadá. Esto ha dado lugar a una ciudad absolutamente abierta a todos, donde puede costar encontrar un sitio, pero donde es difícil sentirse extraño.</p>   
+                                </div>
+                                <a href="https://www.101viajes.com/canada/guia-turismo-viaje-canada" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price-link">Mas información</p>
+                                </a>                        
+                            </div> 
+                        </div>                        
+                    </div> <!-- tab-pane -->
+                    
+                    <!-- Tab 2 -->
+                    <div class="tab-pane fade" id="2a">
+
+                        <div class="tm-recommended-place-wrap">
+                            <div class="tm-recommended-place">
+                                <img src="img/buenosAires.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Buenos aires</h3>
+                                    <p class="tm-text-highlight">Argentina</p>
+                                    <p class="tm-text-gray">Buenos Aires fue elegida como el mejor destino turístico de Sudamérica por la calidad de sus hoteles, restaurantes y atracciones culturales, según la opinión de un grupo de expertos que evaluaron cincuenta ciudades de la región. Mendoza y San Carlos de Bariloche aparecen también entre las diez más destacadas y el Museo Nacional de Bellas Artes es considerado el más sobresaliente del subcontinente.</p>   
+                                </div>
+                                <a href="https://turismo.buenosaires.gob.ar/es" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price-link">Mas información</p>
+                                </a>                        
+                            </div> 
+                        </div>                        
+                    </div> <!-- tab-pane -->          
+                    
+                    <!-- Tab 3 -->     
+                    <div class="tab-pane fade" id="3a">
+
+                        <div class="tm-recommended-place-wrap">
+                            <div class="tm-recommended-place">
+                                <img src="img/londres.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Londres</h3>
+                                    <p class="tm-text-highlight">Inglaterra</p>
+                                    <p class="tm-text-gray">Londres es una ciudad con siglos de historia pero, a la vez, moderna y vibrante. Una de las capitales más importantes y de mayor influencia de Europa. Es sinónimo de importantes museos, mercados callejeros y enormes centros comerciales, discotecas glamurosas y espectáculos teatrales.</p>   
+                                </div>
+                                <a href="https://www.londres.es" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price-link">Mas información</p>
+                                </a>                        
+                            </div> 
+                        </div>                        
+                    </div> <!-- tab-pane -->
+                    
+                    <!-- Tab 4 -->
+                    <div class="tab-pane fade show active" id="4a">
+                    <!-- Current Active Tab WITH "show active" classes in DIV tag -->
+                        <div class="tm-recommended-place-wrap">
+                            <div class="tm-recommended-place">
+                                <img src="img/moscu.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Moscú</h3>
+                                    <p class="tm-text-highlight">Rusia</p>
+                                    <p class="tm-text-gray">Moscú, capital de Rusia, es una de las ciudades más vibrantes y sorprendentes de Europa oriental. Ubicada a orillas del río Moscova, sus edificios y monumentos permiten viajar al pasado comunista y zarista, mientras que museos, teatros y galerías de arte hacen de esta ciudad uno de los centros culturales más importantes del mundo.</p>   
+                                </div>
+                                <a href="https://www.101viajes.com/moscu/guia-turismo-viaje-moscu" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price-link">Mas información</p>
+                                </a>                        
+                            </div> 
+                        </div>                        
+                    </div> <!-- tab-pane -->
+                    
+                    <!-- Tab 5 -->
+                    <div class="tab-pane fade" id="5a">
+
+                        <div class="tm-recommended-place-wrap">
+                            <div class="tm-recommended-place">
+                                <img src="img/elCairo.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">El cairo</h3>
+                                    <p class="tm-text-highlight">Egipto</p>
+                                    <p class="tm-text-gray">El Cairo es una ciudad que siempre ha despertado curiosidad como puerta de entrada al mundo árabe y por la fascinante conjunción entre el moderno estilo de vida de una de las ciudades más importantes del mundo y las meticulosas tradiciones islámicas en un marco de pintoresca arquitectura nutrida de aspectos mahometanos, cristianos, faraónicos y persas.</p>   
+                                </div>
+                                <a href="https://www.101viajes.com/cairo/guia-turismo-viaje-cairo" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price-link">Mas información</p>
+                                </a>                        
+                            </div>
+                        </div>                        
+                    </div> <!-- tab-pane -->   
+                    
+                    <!-- Tab 6 -->            
+                    <div class="tab-pane fade" id="6a">
+
+                        <div class="tm-recommended-place-wrap">
+                            <div class="tm-recommended-place">
+                                <img src="img/sidney.jpeg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Sideny</h3>
+                                    <p class="tm-text-highlight">Australia</p>
+                                    <p class="tm-text-gray">La ciudad de Sídney es una de las 15 ciudades más visitados del mundo. Cuenta con grandes atractivos turísticos como la Ópera de Sídney, Puente del puerto de Sídney, Las Playas de Sídney, el barrio Paddington, el Parque Olímpico, entre otros. Una ciudad de lujo para los turistas.</p>   
+                                </div>
+                                <a href="https://turismo.org/sidney/" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price-link">Mas información</p>
+                                </a>                        
+                            </div>  
+                        </div>                        
+                    </div> <!-- tab-pane -->
+                    
+                    <!-- Tab 7 -->
+                    <div class="tab-pane fade" id="7a">
+
+                        <div class="tm-recommended-place-wrap">
+                            <div class="tm-recommended-place">
+                                <img src="img/whiteDesert.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">White desert</h3>
+                                    <p class="tm-text-highlight">Antartida</p>
+                                    <p class="tm-text-gray">Si tenías como sueño pasar una noche de relax en el Polo Sur, puedes alojarte en el hotel  “White Desert”, que es definido como un campamento de lujo y exclusividad.Cuenta con seis alojamientos en forma de iglú fabricados en fibra de vidrio, lo que los hace climatizados para la temperatura humana. Cada vivienda esquimal tiene espacio para dos personas, un baño, dormitorio y un escritorio.</p>   
+                                </div>
+                                <a href="https://white-desert.com" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price-link">Mas información</p>
+                                </a>                        
+                            </div>
+                        </div>                        
+                    </div> <!-- tab-pane -->
+                </div>
+            </div>
+
+            <div align="center" class="tm-container-outer tm-position-relative" id="tm-section-4">
+				<h1>Contacto</h1>
+                <form action="index.html" method="post" class="tm-contact-form">
+                    <div class="form-group tm-name-container">
+                        <input type="text" id="contact_name" name="contact_name" class="form-control" placeholder="Nombre"  required/>
+                    </div>
+                    <div class="form-group tm-email-container">
+                        <input type="email" id="contact_email" name="contact_email" class="form-control" placeholder="Email"  required/>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="contact_subject" name="contact_subject" class="form-control" placeholder="Asunto"  required/>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="contact_message" name="contact_message" class="form-control" rows="9" placeholder="Mensaje" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary tm-btn-primary tm-btn-send text-uppercase">Enviar mensaje</button>
+                </form>
+            </div> <!-- .tm-container-outer -->
+
+            <footer class="tm-container-outer">
+                <p class="mb-0">Copyright © <span class="tm-current-year">2018</span> United. 
+					Diseñado por Salvador y Josué</p>
+            </footer>
+        </div>
+    </div> <!-- .main-content -->
+
+    <!-- load JS files -->
+    <script src="js/jquery-1.11.3.min.js"></script>             <!-- jQuery (https://jquery.com/download/) -->
+    <script src="js/popper.min.js"></script>                    <!-- https://popper.js.org/ -->       
+    <script src="js/bootstrap.min.js"></script>                 <!-- https://getbootstrap.com/ -->
+    <script src="js/datepicker.min.js"></script>                <!-- https://github.com/qodesmith/datepicker -->
+    <script src="js/jquery.singlePageNav.min.js"></script>      <!-- Single Page Nav (https://github.com/ChrisWojcik/single-page-nav) -->
+    <script src="slick/slick.min.js"></script>                  <!-- http://kenwheeler.github.io/slick/ -->
+    <script src="js/jquery.scrollTo.min.js"></script>           <!-- https://github.com/flesler/jquery.scrollTo -->
+    <script src="js/Flyer.js"></script>
+    <script> 
+        /* DOM is ready
+        ------------------------------------------------*/
+		
+        $(function(){
+
+            // Change top navbar on scroll
+            $(window).on("scroll", function() {
+                if($(window).scrollTop() > 100) {
+                    $(".tm-top-bar").addClass("active");
+                } else {                    
+                 $(".tm-top-bar").removeClass("active");
+                }
+            });
+
+            // Smooth scroll to search form
+            $('.tm-down-arrow-link').click(function(){
+                $.scrollTo('#tm-section-search', 300, {easing:'linear'});
+            });
+
+            // Date Picker in Search form
+            var pickerCheckIn = datepicker('#inputCheckIn');
+            var pickerCheckOut = datepicker('#inputCheckOut');
+
+            // Update nav links on scroll
+            $('#tm-top-bar').singlePageNav({
+                currentClass:'active',
+                offset: 60
+            });
+
+            // Close navbar after clicked
+            $('.nav-link').click(function(){
+                $('#mainNav').removeClass('show');
+            });
+
+            // Slick Carousel
+            $('.tm-slideshow').slick({
+                infinite: true,
+                arrows: true,
+                slidesToShow: 1,
+                slidesToScroll: 1
+            });                
+            $('.tm-current-year').text(new Date().getFullYear());  // Update year in copyright           
+        });
+
+    </script>             
+
+</body>
+</html>
